@@ -20,10 +20,23 @@ module.exports = {
         use: [
           'file-loader'
         ]
-      },{
+      },
+      {
         test: /\.(woff|woff2|eot|otf)$/,
         use:[
           'file-loader'
+        ]
+      },
+      {
+        test:/\.(csv|tsv)$/,
+        use:[
+          'csv-loader'
+        ]
+      },
+      {
+        test:/\.xml$/,
+        use:[
+          'xml-loader'
         ]
       }
     ]
